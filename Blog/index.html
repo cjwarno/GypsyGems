@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="dist/slicknav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <style>
+        section {
+            width: 100%;
+            text-align: center;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="dist/jquery.slicknav.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/zenscroll-min.js"></script>
+    <script src="dist/js/lightbox.min.js"></script>
+    <script>
+        $(function(){
+            $('#menu').slicknav();
+            $('.slider').bxSlider();
+            $( "#accordion" ).accordion();
+            $( "#tabs" ).tabs();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+    <header id="#top">
+        <h1><a href="images/gypsygems.png" data-lightbox="Image1" data-title="Camera">
+            <img src="images/gypsygems.png" alt="Camera" class="center">
+            </a>
+        </h1>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Jewelry.html">Jewelry</a></li>
+            <li><a href="Classes.html">Classes</a></li>
+            <li><a href="More.html">More</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <main>
+        <section>
+          <h2>Photography</h2>
+            <article>
+               
+                <div class="slider">
+                    <div><img src="images/" alt="Bear"></div>
+                    <div><img src="images/eyye.jpg" alt="My Eye"></div>
+                  </div>
+                
+                <h2 id="main">What is Photography</h2>
+
+                <p>Photography is defined as the art or practice of taking and processing photographs.</p>
+
+                <a href="https://www.amateurphotographer.co.uk/wp-content/uploads/2019/08/Manual-masterclass-manual-focusing-600x400.jpg" data-lightbox="Image1" data-title="Camera">
+                <img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2019/08/Manual-masterclass-manual-focusing-600x400.jpg" alt="Camera" class="center">
+                </a>
+
+            </article>
+
+            <div class="feature">
+                <h3 id="portfolio">Photos</h3>
+                <div class="projects">
+                   <a href="images/ferris.jpg" data-lightbox="Photos" data-title="Ferris Wheel">
+                    <img src="images/ferris.jpg" alt="Ferris Wheel" style="width: 500px;height: 600px;">
+                </a>
+                    <a href="images/flower.jpg" data-lightbox="Photos" data-title="Flower">
+                        <img src="images/flower.jpg" alt="Flower" style="width: 600px;height: 500px;">
+                </a>
+                    <a href="images/fog.jpg" data-lightbox="Photos" data-title="Foggy Road">
+                        <img src="images/fog.jpg" alt="Foggy Road" style="width: 600px;height: 500px;">
+                </a>
+                    <a href="images/grass.jpg" data-lightbox="Photos" data-title="Grass">
+                        <img src="images/grass.jpg" alt="Grass" style="width: 600px;height: 500px;">
+                </a>
+                </div>
+            </div>
+          </section>
+        <a class="button" href="#top">Back To the Top</a>
+    </main>
+<footer>
+    <p>&copy; 2022 - Gypsy Gems</p>
+</footer>
+</body>
+</html>
